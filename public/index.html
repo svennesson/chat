@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Chat</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="login">
+				<input class="usernameInput" type="text" placeholder="Enter username" maxlength="14" />
+				<div class="usernameError">Invalid username</div>
+				<h4>Choose a color: </h4>
+				<input class="colorPicker" type="color" value="#ff0081">
+			</div>
+			<div class="chatArea">
+				<div class="chatWrapper">
+					<div class="info">
+						<h3>Online (<span class="numOfUsers">0</span>)</h3>
+						<ul class="users">
+						</ul>
+						<h3>Log</h3>
+						<ul class="log">
+						</ul>
+					</div>
+					<img class="sound soundOn" src="img/soundOn.png" alt="sound on" />
+					<img class="sound soundOff" src="img/soundOff.png" alt="sound off" />
+					<ul class="messages"></ul>
+					<input class="inputMessage" type="text" placeholder="Type here..."/>
+					<input class="inputColor" type="color" />
+				</div>
+			</div>
+		</div>
+		<audio>
+			<source src="/audio/messageSound.wav" type="audio/wav" />
+		</audio>
+		<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
