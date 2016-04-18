@@ -11,4 +11,4 @@
 <li>Socket.io</li>
 </ol>
 
-<a href="http://chat-greatbrain.rhcloud.com/">Open in browser</a>
+<a href="http://chat-patrikappelqvist.rhcloud.com/">Open in browser</a>
